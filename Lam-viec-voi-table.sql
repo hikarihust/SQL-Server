@@ -34,3 +34,10 @@ sp_rename 'Student1', 'Student';
 SELECT * INTO Student1 FROM Student;
 
 SELECT Id, name INTO Student2 FROM Student1;
+
+--copy du lieu vao trong 1 bang da ton tai
+--SELECT * From Student;
+--TRUNCATE TABLE Student1;
+--Select * FROM Student1;
+INSERT INTO Student1
+SELECT * FROM Student

@@ -1,0 +1,37 @@
+Chuẩn hóa dạng 1 - 1NF:
+Quan hệ bảng đạt chuẩn hóa dạng 1 khi thỏa mãn các yếu tố:
+	-các trường thuộc tính phải là số nguyên tố, không được chứa giá trị phức.
+	-không chứa các thuộc tính gây lặp.
+	-không chứa các thuộc tính có thể tính toán từ các thuộc tính khác.
+	-xác định được trường thuộc tính khoác chính.
+	
+	VD:
+		MSV		HoTen		MonHoc		Phone -------> thuoc tinh gay lap la MonHoc
+		
+		->MSV		HoTen		Phone -------> Dat chuan 1
+		
+----------------------------------------------------------------
+
+Chuẩn hóa dạng 2-2NF:
+Thỏa mãn các yếu tố:
+	-phải là quan hệ đạt dạng chuẩn 1.
+	-các trường thuộc tính khôn phải là khóa chính phải phụ thuộc hoàn toàn vào 
+	khóa chính. Không được phép phụ thuộc vào 1 phần của khóa chính.
+	
+	VD:
+		MSV(PK)		HoTen	MaMonHoc(PK)	TenMonHoc	DiemThi  ----->Khong dat chuan 2
+		
+		->MSV(PK)	MaMonHoc(PK)	Diemhi  ------>Dat chuan 2
+	
+----------------------------------------------------------------
+
+Chuẩn hóa dạng 3-3NF:
+Thỉa mãn các điều kiện
+	-phải là quan hệ đạt dạng chuẩn 2.
+	-các trường thuộc tính không phải là khóa chính, phải phụ thuộc trực tiếp vào.
+	Không được phép phụ thuộc bắc cầu thông qua thuộc tính khác.
+	
+	VD:
+		MSV(PK)		HoTen		MaLop		TenLop		SiSo		Phone  ------->Khong dat chuan 3
+	
+		->MSV(PK)		HoTen		MaLop		Phone  -------> Dat chuan 3

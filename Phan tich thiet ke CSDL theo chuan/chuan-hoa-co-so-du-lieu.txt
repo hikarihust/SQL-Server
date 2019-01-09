@@ -1,6 +1,6 @@
 Chuẩn hóa dạng 1 - 1NF:
 Quan hệ bảng đạt chuẩn hóa dạng 1 khi thỏa mãn các yếu tố:
-	-các trường thuộc tính phải là số nguyên tố, không được chứa giá trị phức.
+	-các trường thuộc tính phải là nguyên tố, không được chứa giá trị phức.
 	-không chứa các thuộc tính gây lặp.
 	-không chứa các thuộc tính có thể tính toán từ các thuộc tính khác.
 	-xác định được trường thuộc tính khoác chính.

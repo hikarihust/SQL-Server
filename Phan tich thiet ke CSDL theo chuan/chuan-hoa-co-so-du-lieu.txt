@@ -29,7 +29,8 @@ Chuẩn hóa dạng 3-3NF:
 Thỉa mãn các điều kiện
 	-phải là quan hệ đạt dạng chuẩn 2.
 	-các trường thuộc tính không phải là khóa chính, phải phụ thuộc trực tiếp vào.
-	Không được phép phụ thuộc bắc cầu thông qua thuộc tính khác.
+	Không được phép phụ thuộc bắc cầu thông qua thuộc tính khác(ngoài việc phụ thuộc hoàn toàn vào
+	các thuộc tính của khóa rồi thì ko dc phép phụ thuộc vào các thuộc tính khác).
 	
 	VD:
 		MSV(PK)		HoTen		MaLop		TenLop		SiSo		Phone  ------->Khong dat chuan 3

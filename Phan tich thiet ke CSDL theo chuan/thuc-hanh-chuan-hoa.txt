@@ -25,4 +25,15 @@
 		đó đang phụ thuộc vào.
 	->khóa chính của bảng mới chính là thành phần đang có ở bảng gốc và nó sẽ đóng vai trò 
 		làm khóa ngoại để liên kết giữa bảng mới và bảng gốc.
+		
+		
+		----------------------------------------------------------------------------------------
+
+				Chuẩn hóa dạng 3 - Cách xử lý phi chuẩn
 	
+-đối với các thuộc tính phi chuẩn .
+	->tách ra bảng mới.
+	->khóa chính của bảng mới chính là thuộc tính của bảng gốc mà các thuộc tính phi chuẩn đó đang 
+		phụ thuộc vào.
+	->thuộc tính gây tính phụ thuộc bắc cầu vẫn tồn tại trong bảng gốc và đóng vai trò là khóa ngoại
+		liên kết với bảng mới.

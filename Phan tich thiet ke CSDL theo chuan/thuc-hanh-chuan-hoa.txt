@@ -13,3 +13,16 @@
 	->nếu bảng gây lặp có quan hệ phụ thuộc với bảng gốc thì lấy khóa chính của bảng gốc 
 		kết hợp với khóa chính của thành phần lặp tạo thành khóa chính mới của bảng chứa 
 		các thuộc tính gây lặp.
+
+		
+		----------------------------------------------------------------------------------------
+
+				Chuẩn hóa dạng 2 - Cách xử lý phi chuẩn
+				
+-đối với các thuộc tính gây phi chuẩn.
+	->tách ra bảng mới.
+	->khóa chính của bảng mới chính là thành phần khóa của bảng gốc mà thuộc tính phi chuẩn
+		đó đang phụ thuộc vào.
+	->khóa chính của bảng mới chính là thành phần đang có ở bảng gốc và nó sẽ đóng vai trò 
+		làm khóa ngoại để liên kết giữa bảng mới và bảng gốc.
+	

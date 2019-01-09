@@ -1,0 +1,15 @@
+				Chuẩn hóa dạng 1 - Cách xử lý phi chuẩn
+				
+-loại bỏ các thuộc tính có tính toán từ các thuộc tính khác.
+-xác định được thuộc tính khóa chính.
+-đối với các trường thuộc tính phải là nguyên tố(chứa giá trị phức).
+	->nếu xác định cụ thể số giá trị thì tách tương ứng ra các cột dữ liệu.
+	->hoặc tạo bảng, trong đó cột thuộc tính phức sẽ chứa từng giá trị đơn, khóa
+		chính của bảng mới là kết hợp của trường thuộc tính phức và trường thuộc 
+		tính mà nó phụ thuộc vào.
+	
+-đối với các thuộc tính gây lặp
+	->tách thuộc tính gây lặp ra bảng mới, xác định khóa chính của thành phần lặp.
+	->nếu bảng gây lặp có quan hệ phụ thuộc với bảng gốc thì lấy khóa chính của bảng gốc 
+		kết hợp với khóa chính của thành phần lặp tạo thành khóa chính mới của bảng chứa 
+		các thuộc tính gây lặp.

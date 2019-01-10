@@ -1,0 +1,8 @@
+
+-----------------------------Xử lý ngoại lệ(Phi chuẩn hóa)-----------------------------------
+
+-Mục đích của việc chuẩn hóa là giảm được dư thừa dữ liệu, đảm bảo tính nhất quán -> tách ra thành nhiều bảng hơn để đảm bảo các bảng gốc ban
+	đầu không bị lặp dữ liệu nữa.
+	Nhưng để thu được các nghiệp vụ xử lý tính toán->phải join các bảng lại với nhau do đó sẽ dẫn đến việc chậm về tốc 
+	độ, hiệu năng của ứng dụng.
+-->phải xử lý các ngoại lệ khi thiết kế.

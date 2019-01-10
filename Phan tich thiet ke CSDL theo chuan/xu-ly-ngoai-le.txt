@@ -6,3 +6,9 @@
 	Nhưng để thu được các nghiệp vụ xử lý tính toán->phải join các bảng lại với nhau do đó sẽ dẫn đến việc chậm về tốc 
 	độ, hiệu năng của ứng dụng.
 -->phải xử lý các ngoại lệ khi thiết kế.
+
+
+
+-->Ngoại lệ 1:Làm cho việc dư thừa dữ liệu để giúp cho tăng tốc hiệu năng.
+	Trên cùng  giải thuật thì nếu mà tiết kiệm không gian lưu trữ thì có thể hiệu năng chậm, nhưng nếu muốn hiệu năng tăng thì chấp nhận dư
+	thừa dữ liệu.

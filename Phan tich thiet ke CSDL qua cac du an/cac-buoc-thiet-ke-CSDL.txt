@@ -1,0 +1,30 @@
+
+-----------------------Các Bước Thiết Kế Cơ Sở Dữ Liệu-------------------
+-Phân tích cơ sở dữ liệu.
+-Thiết kế 
+-Triển khai(viết code để tạo ra cơ sở dữ liệu)
+
+Phân Tích:
+	-Input:
+		Yêu cầu của khách hàng.
+		Các tính năng tham khảo khác(ví dụ như tính năng tham khảo từ hệ thống khác nhận từ khách hàng).
+		Kiến thức, kỹ năng, nghiệp vụ và kinh nghiệm.
+	-Process:5 bước
+		Tìm ra danh sách các thực thể có thể có trong hệ thống.
+		Tìm ra mối quan hệ giữa các thực thể đó.
+		Tìm ra các thuộc tính của thực thể.
+		Tìm ra kiểu dữ liệu của các thuộc tính.
+		Vẽ mô hình quan hệ.
+	-Output:
+		Tài liệu phân tích.
+		Mô hình quan hệ thực thể.
+		
+Thiết kế và triển khai:
+	-Input:
+		Đầu ra của phần phân tích.
+	-Process:
+		Tạo ra các bảng.
+		Tạo ra trường.
+		Tạo ra các constraint
+	-Output:
+		Một cơ sở dữ liệu vật lý.

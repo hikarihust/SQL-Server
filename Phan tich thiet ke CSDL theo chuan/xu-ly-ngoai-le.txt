@@ -12,3 +12,6 @@
 -->Ngoại lệ 1:Làm cho việc dư thừa dữ liệu để giúp cho tăng tốc hiệu năng.
 	Trên cùng  giải thuật thì nếu mà tiết kiệm không gian lưu trữ thì có thể hiệu năng chậm, nhưng nếu muốn hiệu năng tăng thì chấp nhận dư
 	thừa dữ liệu.
+	
+-->Ngoại lệ 2:Khi thiết kế ra 1 bảng có rất nhiều trường thuộc tính nhung trên thực tế các trường đó chỉ có đúng 1 giá trị.
+	->có thể thiết kế bảng theo kiểu cấu hình hệ thống.

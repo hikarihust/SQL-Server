@@ -1,0 +1,61 @@
+--------------------------------------------------------------------------------------
+					Tìm các thực thể trong yêu cầu của khách hàng
+--------------------------------------------------------------------------------------
+-Tìm các tính năng chính của hệ thống(main function).
+-Hệ thống cần lưu trữ nhũng dữ liệu gì.
+-Giới hạn của function.
+
+
+--------------------------Xây dựng hệ thống đào tạo trực tuyến-----------------------
+Requirements:
+	-Học Online
+	-Comment của khách hàng
+	-Thanh toán trực tuyến
+	-User register and profile
+	-Tin tức
+	-Thông tin khóa học
+	-Thông tin học viên
+	
+1.Tìm các tính năng chính của hệ thống(function)
+	-Learning
+	-User Management
+	-View News
+2.Data lưu trữ
+	-Khóa học
+	-User
+	-Tin tức
+3.Giới hạn của function
+	-Khách hàng xem video online
+	-Comment
+	-Xem được tin tức
+	-Online topup
+	
+	
+-->Danh sách các thực thể: Các thực thể mạnh, đứng độc lập, không phụ thuộc vào các thực thể khác
+	a.Course->Triển khai ra tùy theo chức năng của nó
+		->b.CourseCategory
+		->c.CourseRating
+		->d.CourseTrainee(danh sách học viên khóa học)
+	e.User
+		->f.Role(phân quyền: quản trị, học viên, cộng tác viên...)
+	g.Post(Bài viết)
+		h.PostCategory
+	j.Footer(danh sách footer)
+	k.Menu
+	l.Slide
+	m.Setting(cấu hình của toàn ứng dụng)	
+	
+	
+------------------------------------------------------------------------------------------------
+						Tìm Mối Quan Hệ Của Các Thực Thể
+------------------------------------------------------------------------------------------------
+Relationship:
+	a.Một khóa học có nhiều học viên(trainee)
+	b.Course belong to one course Category
+	c.A Course has many rating
+	d.A course has many videos
+	e.A course belong to one teacher
+	f.An user belong to many role
+	g.A post belong to many PostCategory
+	h.A post has many tag
+	

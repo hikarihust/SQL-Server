@@ -1,0 +1,173 @@
+--------------------------------------------------------------------------------------
+					Tìm các thực thể trong yêu cầu của khách hàng
+--------------------------------------------------------------------------------------
+-Tìm các tính năng chính của hệ thống(main function).
+-Hệ thống cần lưu trữ nhũng dữ liệu gì.
+-Giới hạn của function.
+
+
+--------------------------Xây dựng hệ thống đào tạo trực tuyến-----------------------
+Requirements:
+	-Học Online
+	-Comment của khách hàng
+	-Thanh toán trực tuyến
+	-User register and profile
+	-Tin tức
+	-Thông tin khóa học
+	-Thông tin học viên
+	
+1.Tìm các tính năng chính của hệ thống(function)
+	-Learning
+	-User Management
+	-View News
+2.Data lưu trữ
+	-Khóa học
+	-User
+	-Tin tức
+3.Giới hạn của function
+	-Khách hàng xem video online
+	-Comment
+	-Xem được tin tức
+	-Online topup
+	
+	
+-->Danh sách các thực thể: Các thực thể mạnh, đứng độc lập, không phụ thuộc vào các thực thể khác
+	a.Course->Triển khai ra tùy theo chức năng của nó
+		->b.CourseCategory
+		->c.CourseRating
+		->d.CourseTrainee(danh sách học viên khóa học)
+	e.User
+		->f.Role(phân quyền: quản trị, học viên, cộng tác viên...)
+	g.Post(Bài viết)
+		h.PostCategory
+	j.Footer(danh sách footer)
+	k.Menu
+	l.Slide
+	m.Setting(cấu hình của toàn ứng dụng)	
+	
+	
+------------------------------------------------------------------------------------------------
+						Tìm Mối Quan Hệ Của Các Thực Thể
+------------------------------------------------------------------------------------------------
+Relationship:
+	a.Một khóa học có nhiều học viên(trainee)
+	b.Course belong to one course Category
+	c.A Course has many rating
+	d.A course has many videos
+	e.A course belong to one teacher
+	f.An user belong to many role
+	g.A post belong to many PostCategory
+	h.A post has many tag
+	
+	
+------------------------------------------------------------------------------------------------
+						Tìm Các Thuộc Tính Của Các Thực Thể
+------------------------------------------------------------------------------------------------
+Có 3 kiểu của thuộc tính:
+	Các thuộc tính để lưu dữ liệu, chứa mô tả của thực thể     --------->khách hàng muốn gì?
+	Các trường mang tính chất functional để phục vụ cho việc lập trình  --------->người lập trình muốn gì?
+	Các thuộc tính khóa cho thực thể
+	
+	
+	a.Course->Triển khai ra tùy theo chức năng của nó
+		(Các trường Data)
+			CourseName
+			Trainer(Người dạy)
+			Content(Nội dung khóa học)
+			Price
+			ReleaseDate(Ngày phát hành)
+			Image(ảnh đại diện)
+		(Các trường functional)
+			CategoryName
+			DateCreated
+			CreatedUser
+			SortOrder
+			Status(Bật/Tắt)
+			TopFlag
+			ShowOnHome
+		(Key)
+			CourseId
+		-------------
+		SeoKeyword
+		SeoDescription
+		SeoAlias
+	b.CourseCategory
+		Id
+		Name
+		SortOrder
+		Status
+		ParentId->CategoryId và != this Id(Cấu trúc cha con) -----> Tìm ra Id của Category cha
+		-------------
+		SeoKeyword
+		SeoDescription
+		SeoAlias
+	c.CourseRating
+		CourseId
+		UserId
+		Rate(Rate bao nhiêu điểm)
+	d.CourseTrainee(danh sách học viên khóa học)
+		CourseId
+		UserId
+		DateOfJoin(Mua bao giờ)
+		ExpireDate(Ngày hết hạn)
+		Price
+	e.User(Thông tin của User và thông tin đăng nhập)
+		Id
+		FirstName
+		LastName
+		Birthday
+		IdentityNumber
+		Phone
+		Avatar
+		Email
+		DateOfJoin(Ngày tham gia hệ thống)
+		UserName
+		Password
+		Address
+		Status
+	f.Role(phân quyền: quản trị, học viên, cộng tác viên...)
+		Id
+		Name
+	g.Post(Bài viết)
+		Id
+		CategoryId
+		Title
+		ShortDescription
+		Image
+		PublishDate
+		Content
+		CreatedDate
+		CreatedBy
+		Status
+	h.PostCategory
+		Id
+		Name
+	j.Footer(danh sách footer)
+		Id
+		Content
+	k.Menu
+		Id
+		Text
+		Link
+		SortOrder
+		Status
+	l.Slide
+		Id
+		Image
+		Description
+		SortOrder
+	m.Setting(cấu hình của toàn ứng dụng)
+		Id
+		Name
+		Value
+		
+------------------------------------------------------------------------------------------------
+						Lựa Chọn Khóa Tự Nhiên
+------------------------------------------------------------------------------------------------
+-Key phải là duy nhất
+-Kích thước kiểu dữ liệu nhỏ để tiết kiệm trong việc lưu trữ
+-Key chính là Primary key -->tự động tạo clustered index-->được lưu trên b-tree
+-Trường name ở đây là duy nhất, nó chính là khóa tự nhiên nhưng vấn đề cửa nó là size lớn--> làm tăng
+	bộ nhớ-->dẫn đến việc tìm kiếm sẽ chậm hơn. Ngoài ra thì tên cũng có thể thay đổi.
+-Key nhân tạo Interger, tên có thể thay đổi thoải mái nhưng giá trị key nhân tạo này luôn cố định.
+	giảm được size của bộ nhớ, tăng được performance.

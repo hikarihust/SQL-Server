@@ -90,7 +90,7 @@ Có 3 kiểu của thuộc tính:
 		-------------
 		SeoKeyword
 		SeoDescription
-		SeoAlias
+		SeoAlias(slug)
 	b.CourseCategory
 		Id
 		Name
@@ -100,7 +100,7 @@ Có 3 kiểu của thuộc tính:
 		-------------
 		SeoKeyword
 		SeoDescription
-		SeoAlias
+		SeoAlias(slug)
 	c.CourseRating
 		CourseId
 		UserId

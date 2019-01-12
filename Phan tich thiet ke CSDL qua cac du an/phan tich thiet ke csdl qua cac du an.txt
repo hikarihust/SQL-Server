@@ -1,0 +1,43 @@
+							
+Trong 1 hệ cơ sở dữ liệu của hệ thống có 3 phần chính:
+	System part:
+		-Các bảng để phân quyền
+		-Để cấu hình
+		-Theo dõi hệ thống
+		-Bảo trì hệ thống
+	Bussiness part(phần nghiệp vụ chính)
+		-Đối với hệ thống bán hàng online thì nghiệp vụ chính là quản lý sản phẩm và quản lý hóa đơn
+	Utilities part
+		Chứa các bảng tiện ích, chẳng hạn như các bảng lưu trữ nội dung về tin tức, footer, slide, menu.
+		
+	---------------------------------------------------------------------------------------------------
+								Thiết Kế Hệ Thống Bán Hàng Online
+	---------------------------------------------------------------------------------------------------
+Đối với hệ thống bán hàng online thì nghiệp vụ chính là quản lý sản phẩm và quản lý hóa đơn.
+
+Bảng Product:
+	PromotionPrice: Giá khuyến mãi
+	ImageList: Có những sản phẩm cần nhiều ảnh
+	ThumbImage: ảnh nhỏ
+	ViewCount: Số lượt truy cập sản phẩm
+	Warranty: Hạn bảo hành
+	Status: Còn hay hết
+	
+
+Bảng Orders:
+	Status: Đã đặt hàng? Đã hủy hàng? Đã thanh toán thành công?
+	
+	
+Mô hình EAV
+	Bảng product chỉ lưu những thuộc tính chung nhất, còn những thuộc tính động thì sẽ lưu vào bảng Attribute
+	(Với mô hình bán hành Online thì ta có thuộc tính động như mà sắc và kích thước...)
+	
+	
+Các kiểu product của 1 hệ thống thương mại điện tử lớn(có 6 kiểu):
+	Simple Product
+	Configurable Product: là tập hợp của rất nhiều sản phẩm Simple
+	Virtual Product: là sản phẩm ảo, không phải sản phẩm vật chất
+	Grouped Product: có thể mua theo Compo, có thể mua lẻ
+	Bundle Product: cũng gần như Grouped nhưng mà là các sản phẩm cố định
+	Downloadable Product: là các sản phẩm nội dung như là khóa học, ebook-> có thể download được
+	

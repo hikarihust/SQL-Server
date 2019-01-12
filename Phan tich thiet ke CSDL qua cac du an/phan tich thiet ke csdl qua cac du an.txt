@@ -41,3 +41,45 @@ Các kiểu product của 1 hệ thống thương mại điện tử lớn(có 6
 	Bundle Product: cũng gần như Grouped nhưng mà là các sản phẩm cố định
 	Downloadable Product: là các sản phẩm nội dung như là khóa học, ebook-> có thể download được
 	
+	
+	---------------------------------------------------------------------------------------------------
+								Đa Ngôn Ngữ Cho Web Du Lịch
+	---------------------------------------------------------------------------------------------------
+Đối với web đa ngôn ngữ thì có 3 cách tiếp cận:
+	Tiếp cận theo cột
+	Tiếp cận theo dòng
+	Tiếp cận theo bảng
+	
+	
+Tiếp cận theo cột:
+Ưu điểm:
+	Đơn giản, dễ thực hiện
+	Dễ truy vấn, không cần join lại
+	Dữ liệu không bị lặp
+Nhược điểm:
+	Khó cải thiện, khi thêm 1 ngôn ngữ nữa thì phải thêm cột-> sửa code rất nhiều
+	Dư thừa các column
+-->dùng cho trường hợp mà ta biết rõ và fix cứng các loại ngôn ngữ mà trang hỗ trợ, số lượng cột ít
+
+
+Tiếp cận theo dòng:
+	Ưu điểm:
+		Dễ thực hiện
+		Không cần join
+	Nhược điểm:
+		Khó để thêm 1 ngôn ngữ mới
+		Dư thừa dữ liệu
+
+
+Tiếp cận theo 1 bảng dịch:
+	Là 1 trong những giải pháp rõ ràng nhất về cấu trúc cơ sở dữ liệu
+	Tất cả các nội dung cần dịch trong 1 bảng, nó phù hợp với những web động mà có số lượng ngôn ngữ lớn
+		hoặc có số lượng ngôn ngữ cố định và trong tương lai sẽ thêm ngôn ngữ mới.
+		
+	Ưu điểm:
+		Dễ dàng thêm ngôn ngữ mới
+		Các column chỉ cần dữ nguyên tên mà ko cần thêm hậu tố "_lang" vào sau column
+		Truy vấn đơn giản chỉ cần join là xong
+	Nhược điểm:
+		Số lượng bảng tăng lên, do mỗi 1 bảng chính thì cần có thêm 1 bảng translation
+		

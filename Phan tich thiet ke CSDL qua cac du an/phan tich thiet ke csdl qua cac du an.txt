@@ -110,3 +110,24 @@ Các vấn đề liên quan đến chức năng
 
 Bảng Classified
 	Để lưu bản đồ thì có 2 trường: Longtitude và Latitude(để lưu số thập phân->dài)
+	
+	
+	---------------------------------------------------------------------------------------------------
+								Web Tin Tức
+	---------------------------------------------------------------------------------------------------
+Vấn đề chính:
+	Danh mục tin tức
+	Tag(bổ sung cho SEO)
+	Bình luận
+	Quảng cáo
+	Tốc độ
+	Hình ảnh Thumbnail
+	
+Bảng Posts:
+	Status: Vừa đăng, đã được duyệt, trả lại...
+Bảng Advertisements'
+	ClickCount:Đếm số lượt click vào quảng cáo
+Bảng Pages: Page riêng lẻ của trang, chỉ có 1 trang(trang liên hệ, Giới thiệu...)-> Cũng SEO cho các trang này
+Bảnh AdvertisementOnPages: Quảng cáo được đặt trên trang nào. Trang xác định có những quảng cáo nào, quảng cáo
+	được đặt ở vị trí nào.
+	Giá trị Id có type là varchar, nhận các giá trị slug(home...)---> dễ dàng query.

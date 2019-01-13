@@ -83,3 +83,30 @@ Tiếp cận theo 1 bảng dịch:
 	Nhược điểm:
 		Số lượng bảng tăng lên, do mỗi 1 bảng chính thì cần có thêm 1 bảng translation
 		
+		
+	---------------------------------------------------------------------------------------------------
+								Web Giao Vặt Bất Động Sản
+	---------------------------------------------------------------------------------------------------
+Vấn đề chính:
+	Thông tin khách hàng
+	Thông tin giao vặt
+	Comment của người dùng
+	Báo cáo xấu(đây là trang web chủ yếu để đăng những nội dung của người dung đăng lên, tính năng này để 
+		admin có thể lưu được những báo cáo từ phía người dùng report lên là báo cáo xấu
+	Đánh dấu(đánh dấu về bình chọn, yêu thích, không cho hiện thị...)
+	Quảng cáo(ở vị trí nào, ở trang nào, có hình ảnh gì...)
+	Gửi mail nhiều
+	
+Các vấn đề liên quan đến SEO
+	Seo Title
+	Seo MetaKeyword
+	Seo Description
+	Seo Alias
+Các vấn đề liên quan đến chức năng
+	DateCreated
+	CreatedBy
+	Status
+	...
+
+Bảng Classified
+	Để lưu bản đồ thì có 2 trường: Longtitude và Latitude(để lưu số thập phân->dài)

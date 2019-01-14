@@ -144,3 +144,23 @@ Vấn đề chính:
 	Thông tin học viên(Students)
 	Thông tin về giảng viên(Trainer)
 	Thông tin về danh mục khóa học(CourseCategories)
+	
+	
+	
+	---------------------------------------------------------------------------------------------------
+								Web Trắc Nghiệm Online
+	---------------------------------------------------------------------------------------------------
+Vấn đề chính:
+	QuestionCategory(Chia theo môn học hay loại câu hỏi...)
+	Danh sách các câu hỏi(Question)
+	Đáp án(Answer)
+	Đề thi(Exam ->lấy nhẫu nhiên từ danh sách các câu hỏi tùy theo điều kiện lấy Exam)
+	User
+	Lưu lại các lần thi của User(ExamResult-> thi những lần nào, được bao nhiêu điểm, đúng bao nhiêu câu...)
+	Kết quả chi tiết của User(ExamResultDetail)
+Bảng Questions:
+	Level: độ khó của câu hỏi
+	Type: chọn ít hay chọn nhiều
+Bảng Answers:
+	isCorrecct: đáp án đúng là gì(-> type là int???)
+Bảng Exams: Đề thi

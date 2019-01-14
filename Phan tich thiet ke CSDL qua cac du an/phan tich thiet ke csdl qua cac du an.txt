@@ -182,3 +182,29 @@ User-Profile: Có quan hệ 1-1 với nhau. Khi tạo ra 1 bản User thì sẽ 
 	đến của thằng nhận không bị xóa---> Trong bảng Inboxs thiết kế thêm 2 trường đó là SenderDeleted và ReceiverDeleted.
 Trường IsRead trong bảng Inbox--> tin nhắn đã được đọc chưa, nếu chưa được đọc thì có thể thiết kế ra 1 popup để thông báo là đang có
 	tin nhắn chưa được đọc
+	
+	
+	
+	---------------------------------------------------------------------------------------------------
+								Thanh Toán Online
+	---------------------------------------------------------------------------------------------------
+Payment Gateway chủ yếu là trung gian thanh toán giữa các partner, cho phép chúng ta có thể tích hợp vào các hệ thống
+khác.
+Tích hợp vào thêm partner thứ 3, chẳng hạn như ví điện tử của Momo->có phần giao dịch nạp tiền, rút tiền, chuyển tiền và thanh toán.
+
+Thông tin chính:
+	Giao dịch(Transaction)-> giúp kết nối giữa các đơn vị khác nhau thông qua hệ thống Gateway
+	Account(User)
+	Log: Quản lý thông tin về nhật ký
+	Partner: Quản lý thông tin về partner
+	
+Transactions:
+	TransactionType ->Rút tiền, chuyển tiền, nạp tiền, thanh toán.
+	Nạp tiền-> FromAccountId là null
+	
+Accounts:
+	Có tài khoản chính và tài khoản phụ-> Balance và SubBalance
+
+AccountLogs: Theo nhật ký sự thay đổi ở trong các Account
+
+Checksum???????????

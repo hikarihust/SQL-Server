@@ -208,3 +208,9 @@ Accounts:
 AccountLogs: Theo nhật ký sự thay đổi ở trong các Account
 
 Checksum???????????
+
+
+	---------------------------------------------------------------------------------------------------
+								Hệ Thống Cơ Sở Dữ Liệu CRM
+	---------------------------------------------------------------------------------------------------
+https://phpdatagrid.com/apps/phpgrid-custom-crm/sales/tasks.php

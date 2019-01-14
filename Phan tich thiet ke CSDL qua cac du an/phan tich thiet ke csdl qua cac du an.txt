@@ -131,3 +131,16 @@ Bảng Pages: Page riêng lẻ của trang, chỉ có 1 trang(trang liên hệ, 
 Bảnh AdvertisementOnPages: Quảng cáo được đặt trên trang nào. Trang xác định có những quảng cáo nào, quảng cáo
 	được đặt ở vị trí nào.
 	Giá trị Id có type là varchar, nhận các giá trị slug(home...)---> dễ dàng query.
+	
+	
+	
+	---------------------------------------------------------------------------------------------------
+								Web Học Trực Tuyến
+	---------------------------------------------------------------------------------------------------
+Vấn đề chính:
+	Thông tin khóa học(Courses)
+	Các bài học của khóa học(CourseLession-> có các phần như tài liệu, source code...)
+	Bình luận về Lession(LessionComments)
+	Thông tin học viên(Students)
+	Thông tin về giảng viên(Trainer)
+	Thông tin về danh mục khóa học(CourseCategories)

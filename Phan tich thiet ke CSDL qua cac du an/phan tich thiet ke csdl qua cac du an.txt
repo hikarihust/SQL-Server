@@ -164,3 +164,21 @@ Bảng Questions:
 Bảng Answers:
 	isCorrecct: đáp án đúng là gì(-> type là int???)
 Bảng Exams: Đề thi
+
+
+
+	---------------------------------------------------------------------------------------------------
+								Web Kết Bạn Trực Tuyến
+	---------------------------------------------------------------------------------------------------
+Vấn đề chính:
+	Profile của người kết bạn
+		Từ profile để triển khai các tính năng như tìm kiếm, xem thông tin profile, thông tin ảnh, mong muốn...
+		Thông tin profile càng chi tiết thì match 2 người càng chuẩn hơn
+	Thông tin ảnh(Images)
+	Danh sách tin nhắn của người dùng(Inbox)
+	
+User-Profile: Có quan hệ 1-1 với nhau. Khi tạo ra 1 bản User thì sẽ tạo ra 1 bản Profile
+Đối với chức năng Inbox thì khi người gửi xóa đi tin ngắn đã gửi trong hộp thư gửi đi thì tin nhắn trong hộp thư
+	đến của thằng nhận không bị xóa---> Trong bảng Inboxs thiết kế thêm 2 trường đó là SenderDeleted và ReceiverDeleted.
+Trường IsRead trong bảng Inbox--> tin nhắn đã được đọc chưa, nếu chưa được đọc thì có thể thiết kế ra 1 popup để thông báo là đang có
+	tin nhắn chưa được đọc
